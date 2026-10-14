@@ -1,0 +1,47 @@
+:root {--accent:#32a1d1;--ink:#172b3d;--muted:#647687;--line:#e3eaf0;}
+html,body,.stApp,.stApp h1,.stApp h2,.stApp h3,.stApp p,.stApp label,.stApp summary,
+[data-testid="stMetricValue"],[data-testid="stMetricLabel"],.stApp button,.stApp input,.stApp textarea,.stApp select {
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Arial,sans-serif !important;
+}
+.stApp {background:#fff;color:var(--ink);}
+[data-testid="stSidebar"] {background:#f5f8fb;border-right:1px solid var(--line);}
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {gap:.65rem;}
+.block-container {max-width:1220px;padding-top:5rem;padding-bottom:3.5rem;}
+h1 {font-size:2.25rem !important;letter-spacing:-.045em;font-weight:700 !important;}
+h2 {font-size:1.45rem !important;letter-spacing:-.025em;}
+h3 {font-size:1.1rem !important;letter-spacing:-.015em;}
+p {line-height:1.65;}
+[data-testid="stMetric"] {background:#f4f9fc;border:1px solid #daedf6;border-top:3px solid var(--accent);border-radius:12px;padding:18px;}
+[data-testid="stMetricLabel"] {color:var(--muted);}
+[data-testid="stMetricValue"] {font-size:1.8rem;font-weight:650;letter-spacing:-.035em;}
+.stButton button,.stDownloadButton button,.stFormSubmitButton button {border-radius:9px;min-height:42px;font-weight:600;}
+button[kind="primary"],button[kind="primaryFormSubmit"] {background:#32a1d1 !important;color:#fff !important;border-color:#32a1d1 !important;}
+button[kind="primary"]:hover,button[kind="primaryFormSubmit"]:hover {background:#2589b4 !important;border-color:#2589b4 !important;}
+[data-testid="stForm"] {background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:22px;}
+[data-testid="stExpander"] {border-radius:10px;border-color:var(--line);}
+[data-testid="stTabs"] button[aria-selected="true"] {color:#21799f;font-weight:650;}
+[data-testid="stPageLink"] a {border-radius:8px;}
+[data-testid="stSidebar"] [data-testid="stPageLink"] a:hover {background:#e1f1f9;}
+[data-testid="stSidebar"] [data-testid="stPageLink"] a[aria-current="page"] {background:#dff1fa;color:#176c92;font-weight:650;}
+.brand {display:flex;align-items:center;gap:12px;margin:6px 0 18px;}
+.brand img {width:44px;height:44px;}
+.brand strong {font-size:1.25rem;letter-spacing:-.035em;}
+.brand small {display:block;color:var(--muted);font-size:.75rem;margin-top:2px;}
+.eyebrow {color:#21799f;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px;}
+.hero {padding:32px;border:1px solid #d7ebf6;border-radius:18px;background:linear-gradient(115deg,#edf8fe,#f8fbfd 72%);margin-bottom:24px;position:relative;overflow:hidden;}
+.hero h1 {margin:0 0 12px;max-width:720px;line-height:1.15;}
+.hero p {color:#536d80;max-width:690px;margin:0;}
+.hero .hero-mark {position:absolute;right:25px;top:35px;width:86px;opacity:.12;}
+.step-card {min-height:122px;}
+.step-card .step-number {color:#21799f;font-size:.75rem;font-weight:650;margin-bottom:5px;}
+.step-card strong {font-size:1.08rem;}
+.step-card p {font-size:.85rem;color:var(--muted);margin:8px 0 0;line-height:1.5;}
+.page-heading {border-left:4px solid var(--accent);padding-left:16px;margin-bottom:10px;}
+.page-heading h1 {margin-bottom:0;}
+.page-heading p {color:var(--muted);margin-top:4px;}
+@media(max-width:640px) {.hero{padding:22px;}.hero .hero-mark{display:none;}h1{font-size:1.8rem !important;}.block-container{padding-top:4.75rem;}}
+
+/* Keep Streamlit's sidebar controls available while hiding publishing UI. */
+[data-testid="stAppDeployButton"], .stAppDeployButton {display:none !important;}
+.hero {overflow:visible;}
+.hero h1 {padding-top:0;line-height:1.2;}

@@ -1,0 +1,23 @@
+{
+  "dataset_sha256": "97b7d9d1d38c7298e824fe55fae251e85439abb7ef2d53ffd2ffde8534eaca1c",
+  "selected_features": [
+    "quarter",
+    "is_holiday_peak",
+    "rainy_days",
+    "humidity_pct",
+    "typhoon_max_wind_kt",
+    "storm_signal_days",
+    "pm25_ugm3",
+    "wave_height_m"
+  ],
+  "lookback": 12,
+  "best_params": {
+    "units": 64,
+    "dropout": 0.3,
+    "batch_size": 16
+  },
+  "shap_forecasts": 10,
+  "shap_background_windows": 30,
+  "shap_nsamples": 256,
+  "shap_max_additivity_error": 0.6356910429894924
+}
